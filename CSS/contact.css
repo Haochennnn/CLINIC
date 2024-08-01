@@ -1,0 +1,84 @@
+/* contact.css */
+
+/* Additional styling for Contact Us page */
+.form-group label {
+    font-weight: bold;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    margin-top: 80px; /* Adjust this value to provide enough space for the fixed navbar */
+    padding: 20px; /* Add padding to ensure spacing on smaller screens */
+    flex: 1; /* Ensure container takes up available space */
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #007bff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Ensuring footer stays at the bottom of the page */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}

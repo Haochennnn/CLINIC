@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="IMAGES/image1.png" alt="Sun Clinic Logo" class="navbar-logo">
+            <img src="IMAGES/image2.png" alt="Sun Clinic Logo" class="navbar-logo2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="container mt-5">
+        <h2>About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="IMAGES/image1.png" class="img-fluid" alt="About Image">
+            </div>
+            <div class="col-md-6">
+                <p>Sun Clinic merupakan bagian dari El John Medica (PT Sun Health Care), mulai beroperasi pada tanggal 3 September 2009 dengan motto “We Truly Care”.</p>
+                <p>Sudah bekerjasama dengan PT Askes (Persero) sejak tahun 2009, dan BPJS Kesehatan sejak 1 Januari 2014 serta bekerjasama dengan lebih dari 35 lebih Asuransi dan Perusahaan swasta.</p>
+                <p>Fasilitas yang tersedia : Laboratorium klinis, Apotek, ruang tindakan, ruang terapi wicara, poli lansia, praktik dokter umum dan dokter gigi, fisioterapi, pojok ASI, musholla, ruang pertemuan
+                <br><br>
+                Sistem komputerisasi terintegrasi (klinik - laboratorium - apotek)
+                <br><br>
+                Bersertifikasi ISO 9001</p>
+              
+                <p id="partnersSummary">KERJASAMA</p>
+                ➢ BPJS KESEHATAN<br>
+                ➢ BPJS KETENAGAKERJAAN<br>
+                ➢ ADMEDIKA<br>
+                <div id="partnersList" style="display: none;">
+                    <p>
+                        ➢ BUMI PUTRA SYARIAH<br>
+                        ➢ BUMI PUTRA NON SYARIAH<br>
+                        ➢ NAYAKA<br>
+                        ➢ IN HEALTH<br>
+                        ➢ MNC LIFE<br>
+                        ➢ MANULIFE<br>
+                        ➢ SINARMAS<br>
+                        ➢ AVIVA<br>
+                        ➢ ASURANSI RAMAYANA<br>
+                        ➢ TRANS TV<br>
+                        ➢ CS FINANCE<br>
+                        ➢ ADIRA FINANCE<br>
+                        ➢ SOLL MARINA HOTEL<br>
+                        ➢ BPOM<br>
+                        ➢ BANK SUMSEL<br>
+                        ➢ BANK MUAMMALAT<br>
+                        ➢ BANK DANAMON<br>
+                        ➢ PT. TASPEN<br>
+                        ➢ BRI SYARIAH<br>
+                        ➢ GRAND VELLA HOTEL<br>
+                        ➢ LOKA MONITOR<br>
+                        ➢ NOVOTEL HOTEL<br>
+                        ➢ POLDA BANGKA<br>
+                        ➢ PT POS INDONESIA<br>
+                        ➢ PT TRAKINDO CAT<br>
+                        ➢ SANTIKA HOTEL<br>
+                        ➢ UBB<br>
+                        ➢ STIMIK ATMA LUHUR<br>
+                    </p>
+                </div>
+                <a href="#" id="readMoreLink">Read More</a>
+                <br>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+            <p>&copy; 2024 Sun Clinic. Hak Cipta Dilindungi.</p>
+            <p>Alamat: Jalan Solihin GP No.92, Pangkalpinang, Bangka Belitung</p>
+            <p>Email: info@sunclinic.com | Telepon: (0711) 123456</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/about.js"></script>
+    <script>
+        document.getElementById('readMoreLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            var partnersList = document.getElementById('partnersList');
+            var readMoreLink = document.getElementById('readMoreLink');
+            if (partnersList.style.display === 'none') {
+                partnersList.style.display = 'block';
+                readMoreLink.textContent = 'Read Less';
+            } else {
+                partnersList.style.display = 'none';
+                readMoreLink.textContent = 'Read More';
+            }
+        });
+    </script>
+</body>
+</html>
